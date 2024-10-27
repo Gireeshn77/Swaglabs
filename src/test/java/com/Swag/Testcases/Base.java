@@ -40,6 +40,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	
+	// new comment line for git branch z
+	
+	
 	ReadDataFromPropertyFile rd= new ReadDataFromPropertyFile();
     WebDriver driver;
     SimpleDateFormat sdf;
