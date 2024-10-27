@@ -75,7 +75,7 @@ public class Base {
 	 log=LogManager.getLogger("Base.class");
 	 DOMConfigurator.configure("Log4j.xml");
 	 log.info("Enter the url");
-	 driver.get("https://www.saucedemo.com/inventory.html");
+	 driver.get("https://www.saucedemo.com/v1/");
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
@@ -87,6 +87,9 @@ public class Base {
 	   {
 		   TakesScreenshot shot=(TakesScreenshot)driver;
 		   File src=shot.getScreenshotAs(OutputType.FILE);
+		   sdf=new SimpleDateFormat("dd-MM-YYYY,HH.mm.ss");
+		   date=new Date();
+		   dateformat=sdf.format(date);
 		   Repname=tname+dateformat+".png";
 		   File dst =new File(System.getProperty("user.dir")+"/Screenshots/"+Repname);
 		   Files.copy(src, dst);
@@ -151,18 +154,20 @@ public class Base {
 	 {
 		 Alert al=driver.switchTo().alert();
 		 al.accept();
-		 al.dismiss();
-		 al.getText();
+		 //al.dismiss();
+		 //al.getText();
 	 }
 	 public void Keyboard()
 	 {
 		 try
 		 {
 		Robot ro =new Robot();
-		ro.keyPress(KeyEvent.VK_UP);
-		ro.keyRelease(KeyEvent.VK_UP);
+		//ro.keyPress(KeyEvent.VK_UP);
+		//ro.keyRelease(KeyEvent.VK_UP);
+		ro.keyPress(KeyEvent.VK_DOWN);
 		ro.keyPress(KeyEvent.VK_DOWN);
 		ro.keyRelease(KeyEvent.VK_DOWN);
+		ro.keyPress(KeyEvent.VK_ENTER);
 		
 		 }catch(Exception e)
 		 {

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-02T13:40:10 IST" name="Suite" finished-at="2024-07-02T13:40:23 IST" duration-ms="13416">
+  <suite started-at="2024-10-26T15:53:18 IST" name="Suite" finished-at="2024-10-26T15:54:45 IST" duration-ms="87040">
     <groups>
     </groups>
-    <test started-at="2024-07-02T13:40:10 IST" name="Test" finished-at="2024-07-02T13:40:23 IST" duration-ms="13416">
-      <class name="com.Swag.Testcases.SwagaddtoCart">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:10 IST" name="setup" finished-at="2024-07-02T13:40:17 IST" duration-ms="6733" status="PASS">
+    <test started-at="2024-10-26T15:53:18 IST" name="Test" finished-at="2024-10-26T15:54:45 IST" duration-ms="87040">
+      <class name="com.Swag.Testcases.SwagCheckoutPage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:53:19 IST" name="setup" finished-at="2024-10-26T15:53:35 IST" duration-ms="16622" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyCart(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:19 IST" name="verifyCart" data-provider="testdata" finished-at="2024-07-02T13:40:20 IST" duration-ms="693" status="PASS">
+        <test-method signature="checkOutPage(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:53:38 IST" name="checkOutPage" data-provider="testdata" finished-at="2024-10-26T15:53:44 IST" duration-ms="6006" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,14 +27,50 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[secret_sauc]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.Swag.Pageobjects.SwagLabsCartPage.addCart(SwagLabsCartPage.java:27)
+at com.Swag.Testcases.SwagCheckoutPage.checkOutPage(SwagCheckoutPage.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCart -->
-        <test-method signature="verifyCart(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:20 IST" name="verifyCart" data-provider="testdata" finished-at="2024-07-02T13:40:21 IST" duration-ms="605" status="PASS">
+        </test-method> <!-- checkOutPage -->
+        <test-method signature="checkOutPage(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:53:52 IST" name="checkOutPage" data-provider="testdata" finished-at="2024-10-26T15:54:08 IST" duration-ms="15600" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -43,14 +79,53 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[secret_sauc]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Swag.Testcases.Base.waits(Base.java:103)
+at com.Swag.Pageobjects.SwagLabsLoginPage.userName1(SwagLabsLoginPage.java:38)
+at com.Swag.Testcases.SwagCheckoutPage.checkOutPage(SwagCheckoutPage.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCart -->
-        <test-method signature="verifyCart(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:21 IST" name="verifyCart" data-provider="testdata" finished-at="2024-07-02T13:40:21 IST" duration-ms="598" status="PASS">
+        </test-method> <!-- checkOutPage -->
+        <test-method signature="checkOutPage(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:54:09 IST" name="checkOutPage" data-provider="testdata" finished-at="2024-10-26T15:54:25 IST" duration-ms="15605" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -59,34 +134,108 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[secret_sauc]]>
+                <![CDATA[secret_sauce]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Swag.Testcases.Base.waits(Base.java:103)
+at com.Swag.Pageobjects.SwagLabsLoginPage.userName1(SwagLabsLoginPage.java:38)
+at com.Swag.Testcases.SwagCheckoutPage.checkOutPage(SwagCheckoutPage.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCart -->
-        <test-method signature="verifyCart(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:21 IST" name="verifyCart" data-provider="testdata" finished-at="2024-07-02T13:40:22 IST" duration-ms="613" status="PASS">
+        </test-method> <!-- checkOutPage -->
+        <test-method signature="checkOutPage(java.lang.String,java.lang.String)[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:54:26 IST" name="checkOutPage" data-provider="testdata" finished-at="2024-10-26T15:54:42 IST" duration-ms="15593" status="FAIL">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[standard_user]]>
-              </value>
+              <value is-null="true"/>
             </param>
             <param index="1">
-              <value>
-                <![CDATA[secret_sauc]]>
-              </value>
+              <value is-null="true"/>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Swag.Testcases.Base.waits(Base.java:103)
+at com.Swag.Pageobjects.SwagLabsLoginPage.userName1(SwagLabsLoginPage.java:38)
+at com.Swag.Testcases.SwagCheckoutPage.checkOutPage(SwagCheckoutPage.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Swag.Testcases.SwagaddtoCart@22ff4249]" started-at="2024-07-02T13:40:22 IST" name="teardown" finished-at="2024-07-02T13:40:23 IST" duration-ms="1438" status="PASS">
+        </test-method> <!-- checkOutPage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Swag.Testcases.SwagCheckoutPage@4b2bac3f]" started-at="2024-10-26T15:54:44 IST" name="teardown" finished-at="2024-10-26T15:54:45 IST" duration-ms="1572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.Swag.Testcases.SwagaddtoCart -->
+      </class> <!-- com.Swag.Testcases.SwagCheckoutPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

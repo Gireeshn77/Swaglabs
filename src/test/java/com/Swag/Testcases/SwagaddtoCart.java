@@ -14,7 +14,7 @@ import com.Swag.Utilities.ReadDataFromXlsheet;
 
 
 public class SwagaddtoCart extends Base{
-	@JiraPolicy(logTicketReady=true)
+	//@JiraPolicy(logTicketReady=true)
 	Base bs;
 	@Test(dataProvider="testdata",dataProviderClass=ReadDataFromXlsheet.class)
 	public void verifyCart(String un,String ps) throws IOException
